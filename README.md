@@ -1,6 +1,15 @@
-# Button Debounce
+This library is a fork of [`ButtonDebounce`](https://github.com/maykon/ButtonDebounce) using **microsecond timing**, noting that the original millisecond timing
+(as used by most other debouncing libraries) is unnecessarily slow, particularly on faster hardware such as ESP32.
+As bounce times for typical mechanical switches are in the 
+[100μs range](https://forum.arduino.cc/t/debouncing-a-switch-on-an-interrupt-pin/632166/3), 
+debounce filters with a total delay of about 1ms should be sufficient but
+are impossible to implement if the smallest time step is already 1ms.
 
- Pushbuttons often generate improper open/close transitions when pressed, due to mechanical and physical issues: these transitions may be read as multiple presses in a very short time fooling the program, without debouncing, pressing the button once may cause unpredictable results.
+The following is taken from the original README file:
+
+# Button Debounce 
+
+Pushbuttons often generate improper open/close transitions when pressed, due to mechanical and physical issues: these transitions may be read as multiple presses in a very short time fooling the program, without debouncing, pressing the button once may cause unpredictable results.
 
 This library will sample the button repeatedly; and if it sees the button in its new state for 8 consequtive checks (equally spaced within 'delay' milli seconds) -- will report the state as changed.
 
