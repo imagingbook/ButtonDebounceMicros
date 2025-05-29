@@ -1,4 +1,4 @@
-This library is a fork of [`ButtonDebounce`](https://github.com/maykon/ButtonDebounce) using **microsecond timing**, noting that the original millisecond timing
+This library is a fork of [`ButtonDebounce`](https://github.com/maykon/ButtonDebounce) adapted to use **microsecond timing**, noting that the original millisecond timing
 (as used by most other debouncing libraries) is unnecessarily slow, particularly on faster hardware such as ESP32.
 As bounce times for typical mechanical switches are in the 
 [100μs range](https://forum.arduino.cc/t/debouncing-a-switch-on-an-interrupt-pin/632166/3), 
