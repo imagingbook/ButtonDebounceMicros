@@ -1,12 +1,12 @@
 #######################################
-# ButtonDebounce
+# ButtonDebounceMicros
 #######################################
 
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
 
-ButtonDebounce	KEYWORD1
+ButtonDebounceMicros	KEYWORD1
 Button	KEYWORD1
 
 #######################################
