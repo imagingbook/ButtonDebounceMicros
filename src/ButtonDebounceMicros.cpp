@@ -7,11 +7,11 @@ ButtonDebounceMicros::ButtonDebounceMicros(uint8_t pin)
 ButtonDebounceMicros::ButtonDebounceMicros(uint8_t pin, unsigned long delay)
   : ButtonDebounceMicros(pin, delay, DEFAULT_SAMPLES, DEFAULT_INPUT_MODE) {}
 
-ButtonDebounceMicros::ButtonDebounceMicros(uint8_t pin, unsigned long delay, int sampleCnt, uint8_t inputMode) {
+ButtonDebounceMicros::ButtonDebounceMicros(uint8_t pin, unsigned long delayMicros, int sampleCnt, uint8_t inputMode) {
   pinMode(pin, inputMode);
   _pin = pin;
-  _delayTotal = delay;
-  _delaySample = delay / sampleCnt;
+  _delayTotal = delayMicros;
+  _delaySample = delayMicros / sampleCnt;
   _lastState = digitalRead(_pin);
   _lastDebounceTime = micros();
   _lastChangeTime = _lastDebounceTime;
