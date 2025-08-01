@@ -1,6 +1,6 @@
-#include <ButtonDebounce.h>
+#include <ButtonDebounceMicros.h>
 
-ButtonDebounce button(10, 250);
+ButtonDebounceMicros button(10);
 void setup() {
   Serial.begin(115200);
 }
