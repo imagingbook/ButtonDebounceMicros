@@ -77,9 +77,4 @@ void loop() {
 
 ## Contributors
 
-Thank you for all contributions:
-
-* [per1234](https://github.com/per1234)
-* [Italo Souza](https://github.com/italosouza)
-* [Dirk-Willem van Gulik](https://github.com/dirkx)
-* [abaskin](https://github.com/abaskin)
+See [`ButtonDebounce`](https://github.com/maykon/ButtonDebounce) for the list of contributors to the original library.
