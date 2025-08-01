@@ -34,9 +34,6 @@ button.setCallback(onButtonChange);
 Or - in a more anonymous style:
 
 ```
-void onButtonChange(const int state) {
-  Serial.println("Changed: " + String(state));
-}
 ButtonDebounceMicros button(3, 5000); // assign button to PIN 3 with 5000us = 5ms debounce time
 button.setCallback([](const int state) {
   Serial.println("Changed: " + String(state));
