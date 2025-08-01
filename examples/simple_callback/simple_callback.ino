@@ -1,6 +1,6 @@
-#include <ButtonDebounce.h>
+#include <ButtonDebounceMicros.h>
 
-ButtonDebounce button(10, 250);
+ButtonDebounceMicros button(10);
 void buttonChanged(const int state){
   Serial.println("Changed: " + String(state));
 }
