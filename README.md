@@ -19,7 +19,7 @@ This library will sample the button repeatedly; and if it sees the button in its
 ## SETUP
 
 
-Declare a `ButtonDebouceMicros` object with `pin` and `delayMicros` to debounce as parameter, and define a callback function.
+Declare a `ButtonDebounceMicros` object with `pin` and `delayMicros` to debounce as parameter, and define a callback function.
 
 Example:
 
