@@ -61,7 +61,8 @@ in the Arduino API.
 
 ## LOOP
 
-Due the time buffer used in each button, please call the `update()` method in `loop`, so it can be update and reflect all state changes.
+Due to the time buffer used in each button, please call the associated `update()` method in `loop`, 
+so it can be update and reflect all state changes:
 ```
 #include <ButtonDebounceMicros.h>
 ...
