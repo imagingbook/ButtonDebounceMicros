@@ -57,7 +57,8 @@ This can be changed by using the full constructor instead. Here is the complete 
 * `ButtonDebounceMicros(uint8_t pin, unsigned long delayMicros)` for backward compatibility,
 * `ButtonDebounceMicros(uint8_t pin, unsigned long delayMicros, int sampleCnt, uint8_t inputMode)` full constructor.
 
-The value of `sampleCnt` is 8 by default (min = 1).
+If not specified, the value of `delayMicros` is 5.000 microseconds (= 5 ms),
+the default value of `sampleCnt` is 8 (min. = 1).
 Possible values for `inputMode` are `INPUT` or `INPUT_PULLUP`, as defined by the `pinMode()` method
 in the Arduino API.
 
