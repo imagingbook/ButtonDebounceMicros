@@ -13,6 +13,7 @@ Button	KEYWORD1
 # Methods and Functions (KEYWORD2)
 #######################################
 
+print	KEYWORD2
 update	KEYWORD2
 state	KEYWORD2
 setCallback	KEYWORD2
